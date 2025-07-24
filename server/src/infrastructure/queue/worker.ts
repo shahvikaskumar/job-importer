@@ -76,7 +76,7 @@ async function bootstrapWorker() {
   );
 
   worker.on('completed', (job) => {
-    console.log(`✅ Completed job ${job.id}`);
+    console.log(`Completed job ${job.id}`);
   });
 
   worker.on('failed', (job, err) => {
